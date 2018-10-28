@@ -7,9 +7,20 @@ using System.Threading.Tasks;
 namespace BC_AI {
 	class BoardController {
 
-		public void UpdateBoard(string boardState) {
+        private int _maxFramesQuantity = 10;
+        private Board[] _boardsFrames;
+
+        public void Init() {
+            _boardsFrames = new Board[10];
+        }
+
+		public void UpdateBoards(string boardState) {
 			
 		}
+
+        public void DrawDebugInfo() {
+
+        }
 
 	}
 }

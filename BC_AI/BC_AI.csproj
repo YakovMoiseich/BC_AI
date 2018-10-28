@@ -116,8 +116,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Board.cs" />
     <Compile Include="BoardCell.cs" />
     <Compile Include="BoardController.cs" />
+    <Compile Include="BotController3000.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
