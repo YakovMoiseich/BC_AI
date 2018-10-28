@@ -24,8 +24,8 @@ namespace BC_AI {
 
             _wsController.webSocket.MessageReceived += (sender, args) => {
 				Console.WriteLine($"data={args.Message}");
-
-                _boardController.UpdateBoards(args.Message);
+                string board = args.Message.Remove(0, 6);
+                _boardController.AddBoardFrame(board);
                 string nextActions = _botController.CalculateNextActions();
                 _wsController.webSocket.Send(nextActions);
 
